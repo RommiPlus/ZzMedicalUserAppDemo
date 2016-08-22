@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidobservablescrollviewdemo.ParallexAndStickerHeaderActivity">
+
+    <FrameLayout
+        android:id="@+id/pager_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_180_dp"
+        android:layout_marginTop="@dimen/distance_48dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/example" />
+
+    <include
+        android:id="@+id/tab"
+        android:layout_marginTop="@dimen/distance_228_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/tab" />
+</FrameLayout>
